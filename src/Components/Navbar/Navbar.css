@@ -6,17 +6,19 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #111;
+  background-color: transparent;
 }
 
 .logo {
   position: fixed;
   left: 20px;
   width: 80px;
+  cursor: pointer;
 }
 
 .avatar {
   position: fixed;
   right: 20px;
   width: 30px;
+  cursor: pointer;
 }
