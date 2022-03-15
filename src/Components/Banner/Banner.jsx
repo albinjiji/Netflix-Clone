@@ -5,14 +5,13 @@ import axios from "../../axios";
 
 function Banner() {
   const [movie, setMovie] = useState();
-  const [time, setTime] = useState(0);
 
   useEffect(() => {
     axios
       .get(`trending/all/week?api_key=${API_KEY}&language=en-US`)
       .then((response) => {
         console.log(response.data.results[0]);
-        setMovie(response.data.results[time]);
+        setMovie(response.data.results[1]);
       });
   }, []);
   return (
